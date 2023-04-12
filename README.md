@@ -30,9 +30,11 @@ To install the version of AutoPyTorch that features our work, you can use these 
 
 ```
 # The following commands assume the user is in the cloned directory
+miniconda3 #To change group to anaconda
 conda create -n reg_cocktails python=3.8
 conda activate reg_cocktails
-conda install gxx_linux-64 gcc_linux-64 swig
+conda install gxx_linux-64 gcc_linux-64
+conda install -c conda-forge swig
 cat requirements.txt | xargs -n 1 -L 1 pip install
 python setup.py install
 ```
